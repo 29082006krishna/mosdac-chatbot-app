@@ -18,7 +18,7 @@ load_dotenv()
 
 GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
 if not GOOGLE_API_KEY:
-    st.error("GOOGLE_API_KEY not found. Please set it in your .env file.")
+    st.error("GOOGLE_API_KEY not found. Please set it in your .env file or Streamlit Cloud secrets.")
     st.stop()
 
 # Apply nest_asyncio to handle potential asyncio conflicts in Streamlit's environment
@@ -26,13 +26,37 @@ nest_asyncio.apply() # <<< IMPORTANT FIX FOR EVENT LOOP ERROR
 
 VECTOR_DB_PATH = "./mosdac_vector_db"
 
-st.set_page_config(page_title="MOSDAC Chatbot", page_icon="🛰️")
+# --- SEO Enhancement START ---
+st.set_page_config(
+    page_title="MOSDAC AI Chatbot: Your Satellite Data Assistant", # Enhanced browser tab title
+    page_icon="🛰️", # A relevant emoji
+    layout="wide" # Optional: Makes the app wider for better viewing
+)
+# --- SEO Enhancement END ---
 
-st.title("🛰️ MOSDAC Chatbot")
-st.write("Ask me anything about MOSDAC missions, data, or products!")
+
+# --- SEO Enhancement START ---
+st.title("🛰️ MOSDAC AI Chatbot: Your Satellite Data Assistant")
+st.markdown("""
+**Welcome! Ask me anything about the Meteorological & Oceanographic Satellite Data Archival Centre (MOSDAC), ISRO's earth observation missions, and related data products.**
+
+This AI-powered chatbot provides instant, accurate, and concise information based on MOSDAC's comprehensive knowledge base. You can inquire about:
+* **Satellite Missions:** Details on missions like INSAT-3DR, Oceansat-2, RISAT-1, Megha-Tropiques, and more.
+* **Data Products:** Information on various levels of data (Level-1, Level-2), meteorological products, oceanographic data, and derived products.
+* **Data Access & Registration:** Guidance on how to register on the MOSDAC website and access satellite imagery and other datasets.
+* **Applications:** Explore how MOSDAC data is used in weather forecasting, climate monitoring, oceanography, and disaster management.
+
+Start by asking a question like:
+* "What is INSAT-3DR?"
+* "How can I access satellite data from MOSDAC?"
+* "Tell me about ocean data products."
+* "What is MOSDAC used for?"
+""")
+# --- SEO Enhancement END ---
+
 
 # Initialize embedding model and LLM using Streamlit's cache
-# This function is run only once thanks to @st.cache_resource,
+# This function is run only only once thanks to @st.cache_resource,
 # which helps prevent asyncio-related errors.
 @st.cache_resource
 def get_llm_and_embeddings(api_key):
