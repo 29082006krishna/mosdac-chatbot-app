@@ -46,7 +46,7 @@ def get_llm_and_embeddings(api_key):
         # IMPORTANT: Updated embedding model name to "models/embedding-001"
         embeddings = GoogleGenerativeAIEmbeddings(model="models/embedding-001", google_api_key=api_key)
         # Keeping "gemini-pro" for LLM as it's generally correct.
-        llm = ChatGoogleGenerativeAI(model="gemini-1.5-flash-latest", google_api_key=api_key, temperature=0.3)s
+        llm = ChatGoogleGenerativeAI(model="gemini-1.5-flash-latest", google_api_key=api_key, temperature=0.3)
         return llm, embeddings
     except Exception as e:
         st.error(f"Failed to initialize LLM or Embeddings. Check your API key and internet connection: {e}")
