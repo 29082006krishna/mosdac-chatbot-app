@@ -1,0 +1,220 @@
+[
+  {
+    "Menu": "Home",
+    "URL": "/"
+  },
+  {
+    "Menu": "Missions",
+    "URL": "#",
+    "Sub_Menu": [
+      {
+        "Name": "INSAT-3DR",
+        "URL": "/insat-3dr"
+      },
+      {
+        "Name": "INSAT-3D",
+        "URL": "/insat-3d"
+      },
+      {
+        "Name": "KALPANA-1",
+        "URL": "/kalpana-1"
+      },
+      {
+        "Name": "INSAT-3A",
+        "URL": "/insat-3a"
+      },
+      {
+        "Name": "MeghaTropiques",
+        "URL": "/megha-tropiques"
+      },
+      {
+        "Name": "SARAL-AltiKa",
+        "URL": "/saral-altika"
+      },
+      {
+        "Name": "OCEANSAT-2",
+        "URL": "/oceansat-2"
+      },
+      {
+        "Name": "OCEANSAT-3",
+        "URL": "/oceansat-3"
+      },
+      {
+        "Name": "INSAT-3DS",
+        "URL": "/insat-3ds"
+      },
+      {
+        "Name": "SCATSAT-1",
+        "URL": "/scatsat-1"
+      }
+    ]
+  },
+  {
+    "Menu": "Catalog",
+    "URL": "#",
+    "Sub_Menu": [
+      {
+        "Name": "Satellite",
+        "URL": "/internal/catalog-satellite"
+      },
+      {
+        "Name": "Insitu (AWS)",
+        "URL": "/internal/catalog-insitu"
+      },
+      {
+        "Name": "RADAR",
+        "URL": "/internal/catalog-radar"
+      }
+    ]
+  },
+  {
+    "Menu": "Galleries",
+    "URL": "#",
+    "Sub_Menu": [
+      {
+        "Name": "Satellite Products",
+        "URL": "/internal/gallery"
+      },
+      {
+        "Name": "Weather Forecast",
+        "URL": "/internal/gallery/weather"
+      },
+      {
+        "Name": "Ocean Forecast",
+        "URL": "/internal/gallery/ocean"
+      },
+      {
+        "Name": "RADAR (DWR)",
+        "URL": "/internal/gallery/dwr"
+      },
+      {
+        "Name": "Global Ocean Current",
+        "URL": "/internal/gallery/current"
+      }
+    ]
+  },
+  {
+    "Menu": "Data Access",
+    "URL": "#",
+    "Sub_Menu": [
+      {
+        "Name": "Order Data",
+        "URL": "/internal/uops"
+      },
+      {
+        "Name": "Open Data",
+        "URL": "#",
+        "Sub_Sub_Menu": [
+          {
+            "Category": "Atmosphere",
+            "Items": [
+              {
+                "Name": "Bayesian based MT-SAPHIR rainfall",
+                "URL": "/bayesian-based-mt-saphir-rainfall"
+              },
+              {
+                "Name": "GPS derived Integrated water vapour",
+                "URL": "/gps-derived-integrated-water-vapour"
+              },
+              {
+                "Name": "GSMap ISRO Rain",
+                "URL": "/gsmap-isro-rain"
+              },
+              {
+                "Name": "METEOSAT8 Cloud Properties",
+                "URL": "/meteosat8-cloud-properties"
+              }
+            ]
+          },
+          {
+            "Category": "Land",
+            "Items": [
+              {
+                "Name": "3D Volumetric TERLS DWRproduct",
+                "URL": "/3d-volumetric-terls-dwrproduct"
+              },
+              {
+                "Name": "Inland Water Height",
+                "URL": "/inland-water-height"
+              },
+              {
+                "Name": "River Discharge",
+                "URL": "/river-discharge"
+              },
+              {
+                "Name": "Soil Moisture",
+                "URL": "/soil-moisture-0"
+              }
+            ]
+          },
+          {
+            "Category": "Ocean",
+            "Items": [
+              {
+                "Name": "Global Ocean Surface Current",
+                "URL": "/global-ocean-surface-current"
+              },
+              {
+                "Name": "High Resolution Sea Surface Salinity",
+                "URL": "/high-resolution-sea-surface-salinity"
+              },
+              {
+                "Name": "Indian Mainland Coastal Product",
+                "URL": "/indian-mainland-coastal-product"
+              },
+              {
+                "Name": "Ocean Subsurface",
+                "URL": "/ocean-subsurface"
+              },
+              {
+                "Name": "Oceanic Eddies Detection",
+                "URL": "/oceanic-eddies-detection"
+              },
+              {
+                "Name": "Sea Ice Occurrence Probability",
+                "URL": "/sea-ice-occurrence-probability"
+              },
+              {
+                "Name": "Wave based Renewable Energy",
+                "URL": "/wave-based-renewable-energy"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Name": "Cal-Val",
+        "URL": "/internal/calval-data"
+      },
+      {
+        "Name": "Forecast",
+        "URL": "/internal/forecast-menu"
+      },
+      {
+        "Name": "RSS Feeds",
+        "URL": "/rss-feed"
+      }
+    ]
+  },
+  {
+    "Menu": "Reports",
+    "URL": "#",
+    "Sub_Menu": [
+      {
+        "Name": "Calibration",
+        "URL": "#",
+        "Sub_Sub_Menu": [
+          {
+            "Category": "Calibration",
+            "Items": [
+              {
+                "Name": "Insitu",
+                "URL": "/insitu"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]
